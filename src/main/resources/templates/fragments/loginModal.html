@@ -1,0 +1,30 @@
+<div xmlns:th="http://www.thymeleaf.org" th:fragment="loginPopup"
+	class="modal fade" id="popUpWindow">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- header -->
+			<div class="modal-header">
+				<h3 class="modal-title">Login Form</h3>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<!-- body -->
+			<div class="modal-header">
+				<form role="form" th:action='@{/login}' method="POST" id="loginForm">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Login" /> <input
+							type="password" class="form-control" placeholder="Password" />
+					</div>
+				</form>
+			</div>
+			<!-- footer -->
+			<div class="modal-footer">
+				<button class="btn btn-block bg-gray" type="submit" form="loginForm">Log In</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
