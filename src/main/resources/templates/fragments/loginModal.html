@@ -12,16 +12,16 @@
 			</div>
 			<!-- body -->
 			<div class="modal-header">
-				<form role="form" th:action='@{/login}' method="POST" id="loginForm">
+				<form th:action='@{perform_login}' method="POST" name="f" id="f">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Login" /> <input
-							type="password" class="form-control" placeholder="Password" />
+						<input type="text" class="form-control" placeholder="Login" name="username" /> <input
+							type="password" class="form-control" placeholder="Password" name="password"/>
 					</div>
 				</form>
 			</div>
 			<!-- footer -->
 			<div class="modal-footer">
-				<button class="btn btn-block bg-gray" type="submit" form="loginForm">Log In</button>
+				<button class="btn btn-block bg-gray" type="submit" form="f" name="submit">Log In</button>
 			</div>
 
 		</div>
